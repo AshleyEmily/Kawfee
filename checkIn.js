@@ -72,7 +72,7 @@ saveUserLocation = (position) => {
 };
 
 calculateDistanceToCafe = () => {
-  userLocation = new google.maps.LatLng(66.46508, 19.44269);
+  userLocation = new google.maps.LatLng(userLatitude, userLongitude);
   const cafeLocation = new google.maps.LatLng(kawfeeLatitude, kawfeeLongitude);
   distanceToCafe = google.maps.geometry.spherical.computeDistanceBetween(
     userLocation,
